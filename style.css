@@ -1,0 +1,304 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    background-image:url("peter-broomfield-m3m-lnR90uM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+display: flex;
+justify-content:space-between;
+align-items: center;
+padding:0 16px;
+background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255, 255, 255, 0.2) ;
+width: 100%;
+height: 58px;
+position:fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+}
+
+.links {
+    position: relative;
+    right: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-right: 18px;
+    font-size: 17px;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: 550px;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+nav a {
+    font-size: 20px;
+    padding:10px 15px;
+    z-index: 10;
+}
+
+.logo-name {
+    color: white;
+   position: relative;
+   top: 22px;
+   font-size: 25px;
+}
+
+a:hover {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+}
+
+.right button {
+    text-align: right;
+    padding-right:35px;
+    margin-bottom: 30px;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    color: white;
+    border-color:rgba(255, 255, 255, 0.1) ;
+    border-radius: 50px;
+    backdrop-filter:blur(5px);
+    transition: 0.4s;
+
+}
+.right button:hover {
+    background-color: black;
+}
+
+hr {
+    margin: 0;
+    border:1px solid #e5e5e5 ;
+}
+.content {
+    text-align: center;
+    margin:130px 0;
+    position: relative;
+    bottom: 40px;
+}
+
+video {
+    width: 600px;
+   height: auto;
+   border-radius: 10px;
+   box-shadow:0px 8px 25px rgba(0, 0, 0, 0.5) ;
+   margin:20px 0;
+
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 19px;
+    
+}
+
+button {
+    margin-top: 30px;
+    height: 50px;
+    width: 160px;
+    border-radius: 10px;
+    border: 1px solid rgb(100, 98, 102);
+    cursor: pointer;
+}
+
+.Explore button {
+    background-color: black;
+    color: white;
+    border:2px solid rgba(255, 255, 255, 0.1);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    bottom: 18px;
+}
+
+.content button:hover {
+    background-color: #d3d3d3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+ background-color: rgba(255, 255, 255, 0.1);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(255, 255, 255, 0.2) ;
+  color: white;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  height: 40px;
+  bottom: 0;
+}
+
+.main-second {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    width: 900px;
+    padding: 40px;
+    height: 450px;
+    border-radius: 15px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    margin: 100px auto;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    bottom: 30px;
+    font-size: 40px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.05);
+    color: white;
+    margin:30px 0;
+}
+
+.login-button {
+    background-color: black;
+    color: white;
+    border-color:rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 60px;
+}
+
+label {
+    font-size: 23px;
+}
+
+.login-button:hover {
+    background-color: rgb(161, 161, 177);
+    transition: 0.4s;
+}
+
+.show-button {
+    background:rgba(255, 255, 255, 0.005) ;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+    bottom: 95px;
+    left: 370px;
+    height: 25px;
+}
+
+
+
+
+body.light-mode {
+    background-image:url("carter-baran-t5mV5TBzu4s-unsplash.jpg");
+    background-color: #f0f0f0;        
+}
+
+body.light-mode header {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+body.light-mode input {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+
+body.light-mode label,
+body.light-mode h1, 
+body.light-mode h2, 
+body.light-mode h3,
+body.light-mode p, 
+body.light-mode a, 
+body.light-mode .navbar a {
+    color: #000000;
+}
+
+body.light-mode nav a {
+    color: #333;
+}
+
+body.light-mode a:hover {
+    background-color: white;
+
+}
+body.light-mode .main-second,.main-third {
+    background-color: rgba(0, 0, 0, 0.05); 
+    backdrop-filter: blur(15px); 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.main-third {
+     background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter:blur(15px);
+    width: 900px;
+    padding: 40px;
+    height: 700px;
+    border-radius: 15px;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    margin: 100px auto;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    position: relative;
+    bottom: 30px;
+    font-size: 40px;
+}
+
+.login-2button {
+     background-color: black;
+    color: white;
+    border-color:rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 80px;
+}
+
+
+
+
+
+
+
+
