@@ -18,7 +18,7 @@ body {
 
 header {
 display: flex;
-justify-content:space-between;
+justify-content: space-between;
 align-items: center;
 padding:0 16px;
 background-color: rgba(255, 255, 255, 0.1);
@@ -74,7 +74,7 @@ a:hover {
 
 .right button {
     text-align: right;
-    padding-right:35px;
+    padding-right:40px;
     margin-bottom: 30px;
     background-color:rgba(255, 255, 255, 0.1) ;
     color: white;
@@ -100,11 +100,13 @@ hr {
 }
 
 video {
-    width: 600px;
+    width: 500px;
    height: auto;
    border-radius: 10px;
    box-shadow:0px 8px 25px rgba(0, 0, 0, 0.5) ;
-   margin:20px 0;
+   margin:80px 0;
+   position: relative;
+   right: 480px;
 
 }
 
@@ -115,9 +117,16 @@ h1 {
 }
 
 p {
-    color: white;
+    color: #f5f5f5;
     font-size: 19px;
     
+}
+
+ul {
+    font-size: 30px;
+    text-align: left;
+    position: relative;
+    bottom: 350px;
 }
 
 button {
@@ -245,6 +254,7 @@ body.light-mode label,
 body.light-mode h1, 
 body.light-mode h2, 
 body.light-mode h3,
+body.light-mode h5,
 body.light-mode p, 
 body.light-mode a, 
 body.light-mode .navbar a {
@@ -259,7 +269,7 @@ body.light-mode a:hover {
     background-color: white;
 
 }
-body.light-mode .main-second,.main-third {
+body.light-mode .main-second,.main-third{
     background-color: rgba(0, 0, 0, 0.05); 
     backdrop-filter: blur(15px); 
     border: 1px solid rgba(0, 0, 0, 0.1); 
@@ -295,6 +305,123 @@ h3 {
     bottom: 80px;
 }
 
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    position: relative;
+    right: 200px;
+    width: 100%;
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.car-card {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  background: #f5f5f5;
+  border: 1px solid #eee;
+   position: relative;
+  left: 200px;
+  top: 200px;
+  animation:slideup 1s ease-out forwards;
+}
+
+.car-card:hover {
+    transform: translateY(-20px);
+}
+
+
+.card-header {
+  position: relative;
+  height: 200px;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.card-body {
+  padding: 20px;
+}
+
+.car-title {
+  font-size: 20px;
+  margin-top: 15px;
+  color: #1a1a1a;
+}
+
+.car-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+.book-btn {
+  background: #0a0a1a; 
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.fourth-main {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    animation:slideup 1s ease-out forwards;
+}
+
+h5 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.p-cars {
+    font-size: 25px;
+}
 
 
 
