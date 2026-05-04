@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <title>book</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+        <div class="left">
+           <p class="logo-name"><strong>CarZone</strong></p>
+          <nav>
+            <div class="links">
+              <a href="index.html"><strong>Home</strong></a>
+            <a href="cars.html">Cars</a>
+            <a href="book.html">Book</a>
+            <a href="Search.html">Search</a>
+            <a href="feedback (1).html">Feedback</a>
+            <a href="contact2.html">Contact</a>
+            </div>
+          </nav>
+        </div>
+        <div class="right">
+           <button onclick="toggleTheme()">Switch Mode</button>
+        </div>
+      </header>
+<section class="booking-section" id="book-now">
+    <div class="container-booking">
+        <div class="booking-wrapper">
+            
+            <div class="booking-info">
+                <h2>Book Your Car Now</h2>
+                <p>Select your trip details and we will prepare the perfect car for you at the best prices.</p>
+                <ul class="check-list">
+                    <li><span>✓</span>Instant pickup from nearest branch</li>
+                    <li><span>✓</span> Full insurance & total safety</li>
+                    <li><span>✓</span> 24/7 technical support</li>
+                </ul>
+            </div>
+
+            <div class="booking-card-inline">
+                <form id="carBookingForm">
+                    <div class="form-group">
+                        <label>Car Model</label>
+                        <select id="carModel" required>
+                            <option value="" disabled selected>Select Car Model...</option>
+                            <option>Nissan sunny</option>
+                            <option>BMW C100</option>
+                            <option>BMW C200</option>
+                            <option>porsch 911</option>
+                            <option>Hyundai Tucson</option>
+                            <option>Mercedes Benz</option>
+                        </select>
+                    </div>
+
+                    <div class="form-date">
+                        <div class="form-group">
+                            <label>Pickup Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Delivery Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Your phone number" required>
+                        <label>Email</label>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <button type="submit" class="booking-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

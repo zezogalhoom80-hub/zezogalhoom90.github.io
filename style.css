@@ -424,6 +424,14 @@ h5 {
 }
 
 
+#theme-toggle {
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    background: none
+}
+
+
 
 
 

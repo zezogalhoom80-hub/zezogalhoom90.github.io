@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="search.css">
+	<title>CarZone</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="left">
+				<p class="logo"><strong>CarZone</strong></p>
+				<ul>
+					<li><a href="index.html"><strong>Home</strong></a></li>
+					<li><a href="cars.html">Cars</a></li>
+					<li><a href="book.html">Book</a></li>
+					<li><a href="Search.html">Search</a></li>
+					<li><a href="feedback (1).html">Feedback</a></li>
+					<li><a href="contact2.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="switch">
+				<button onclick="toggleTheme()">Switch Mode</button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<aside>
+			<section class="search">
+				<form>
+					<fieldset>
+						<div>
+							<legend>Search for a car</legend>
+							<label for="car-name">Search By Car Name:</label>
+							<input type="text" id="car-name" name="car_name" placeholder="Type car name...">
+						</div>
+						<div>
+							<label for="price-filter">Search By Price Range:</label>
+							<select id="price-filter" name="price_filter">
+								<option value="all">All</option>
+								<option value="under30">Under $30k</option>
+								<option value="30-50">$30k to $50k</option>
+								<option value="above50">Above $50k</option>
+							</select>
+						</div>
+						<div>
+							<label for="transmission">Search By Transmission Type:</label>
+							<select id="transmission" name="transmission">
+								<option value="all">All Types</option>
+								<option value="automatic">Automatic</option>
+								<option value="manual">Manual</option>
+							</select>
+						</div>
+						<div>
+							<label for="carYear">Search By Release Year:</label>
+							<select id="carYear" name="carYear">
+								<option value="all">All</option>
+								<option value="2026">2026</option>
+								<option value="2025">2025</option>
+								<option value="2024">2024</option>
+								<option value="2023">2023</option>
+								<option value="older">Older</option>
+							</select>
+						</div>
+						<div class="form-buttons">
+							<button onclick="searchCars()" type="button">Search</button>
+							<button type="reset">Clear</button>
+						</div>
+					</fieldset>
+				</form>
+				<div class="quick-tags">
+					<button onclick="filterByBrand('BMW')">BMW</button>
+					<button onclick="filterByBrand('Mercedes')">Mercedes</button>
+					<button onclick="filterByBrand('Nissan')">Nissan</button>
+					<button onclick="filterByBrand('Hyundai')">Hyundai</button>
+					<button onclick="filterByBrand('Porsche')">Porsche</button>
+				</div>
+			</section>
+		</aside>
+		<section class="cars-display">
+			<div class="view-btn">
+				<button onclick="toggleView('list')">List View</button>
+				<button onclick="toggleView('grid')">Grid View</button>
+			</div>
+			<div class="cards-container">
+				<!-- Cards-->
+			</div>
+			<div class="paging">
+				<button onclick="prevPage()" class="arr-btn">&laquo;</button>
+				<button onclick="changePage(1)" class="pag-btn active">1</button>
+				<button onclick="changePage(2)" class="pag-btn">2</button>
+				<button onclick="changePage(3)" class="pag-btn">3</button>
+				<button onclick="nextPage()" class="arr-btn">&raquo;</button>
+			</div>
+		</section>
+	</main>
+	<footer>
+		© 2026 AutoHub. All rights reserved.
+	</footer>
+	<script src="Search (1).js"></script>
+</body>
+
+</html>
